@@ -23,7 +23,7 @@ int sensorTwoState = 0;
 
 // millis() stuff
 unsigned long startMillis;
-const unsigned long period = 30000; // preiod for time out (30 seconds)
+const unsigned long period = 60000; // preiod for time out (60 seconds)
 
 bool enableMotor = true;
 
