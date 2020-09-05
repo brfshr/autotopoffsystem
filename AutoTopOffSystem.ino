@@ -23,7 +23,7 @@ int sensorTwoState = 0;
 
 // millis() stuff
 unsigned long startMillis;
-const unsigned long period = 60000; // preiod for time out (60 seconds)
+const unsigned long period = 80000; // period for time out (80 seconds)
 
 bool enableMotor = true;
 
@@ -59,7 +59,7 @@ void loop() {
 
 void sense() {
   do {
-    // read state of both sensors
+    // read state of sensor(s)
     sensorOneState = digitalRead(sensorOne);
     sensorTwoState = digitalRead(sensorTwo);
     Serial.println(sensorOneState, DEC);
